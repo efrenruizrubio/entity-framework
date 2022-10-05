@@ -13,18 +13,18 @@ public class Tarea
 
   [Required]
   [MaxLength(200)]
-  public string Titulo { get; set; }
+  public string Titulo { get; set; } = string.Empty;
 
-  public string Descripcion { get; set; }
+  public string Descripcion { get; set; } = string.Empty;
 
   public Prioridad PrioridadTarea { get; set; }
 
   public DateTime FechaCreacion { get; set; }
 
-  public virtual Categoria Categoria { get; set; }
+  public virtual Categoria Categoria { get; set; } = null!;
 
   [NotMapped]
-  public string Resumen { get; set; }
+  public string Resumen { get; set; } = string.Empty;
 
 }
 
