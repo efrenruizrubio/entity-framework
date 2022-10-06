@@ -11,6 +11,8 @@ public class Categoria
   // [MaxLength(150)]
   public string Nombre { get; set; } = string.Empty;
   public string Descripcion { get; set; } = string.Empty;
+
+  public int Peso { get; set; }
   public virtual ICollection<Tarea> Tareas { get; set; } = null!;
 
 }
